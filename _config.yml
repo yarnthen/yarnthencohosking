@@ -5,17 +5,16 @@ author: Yarn Then Cohos King
 email: yarnthen@gmail.com
 description: "Freshman21 is a Jekyll blog theme." # You can edit this line in _config.yml. It will appear in your document head meta and in your feed.xml site description
 keywords: "Jekyll, theme, Freshman21"
-baseurl: "/freshman21" # the subpath of your site, e.g. /blog/
-url: "http://yulijia.net/freshman21" # the base hostname & protocol for your site
+baseurl: "/yarnthencohosking" # the subpath of your site, e.g. /blog/
+url: "https://yarnthen.github.io/yarnthencohosking" # the base hostname & protocol for your site
 locale: en_US
 
 ### Personal info and site tools info:
-twitter_username: yulijia
 disqus_shortname: yarnthen
 favicon:     "/images/favicon.ico"
 aboutme: Hi, I am Yarn Then Cohos King. You can call me Yarn Then. Welcome to my blog. Ever since I started working, I have always found myself to have the ability to make use of what little resource I have to automate things or make life easier. I have created a lot of small ultilites using excel, powershell, sharepoint to make my life and others better. But I have never actually take the effort to document it down. Now I have finally found some time and made the resolve to do just that to benefit others via this blog.   # these are shown on aboutme-sidebar.
 aboutme_photo: "/images/yarnthen.png"
-google_analytics_key: UA-57979084-1 # put YOUR key here to enable tracking! (blank to disable)
+google_analytics_key:  # put YOUR key here to enable tracking! (blank to disable)
 urlimg: '/images/'
 
 ### Site setting:
