@@ -11,11 +11,11 @@ locale: en_US
 
 ### Personal info and site tools info:
 disqus_shortname: yarnthen
-favicon:     "/images/favicon.ico"
+favicon:     "/yarnthencohosking/images/favicon.ico"
 aboutme: Hi, I am Yarn Then Cohos King. You can call me Yarn Then. Welcome to my blog. Ever since I started working, I have always found myself to have the ability to make use of what little resource I have to automate things or make life easier. I have created a lot of small ultilites using excel, powershell, sharepoint to make my life and others better. But I have never actually take the effort to document it down. Now I have finally found some time and made the resolve to do just that to benefit others via this blog.   # these are shown on aboutme-sidebar.
-aboutme_photo: "/images/yarnthen.png"
+aboutme_photo: "/yarnthencohosking/images/yarnthen.png"
 google_analytics_key:  # put YOUR key here to enable tracking! (blank to disable)
-urlimg: '/images/'
+urlimg: '/yarnthencohosking/images/'
 
 ### Site setting:
 ShowContactInfo: "True" # Personal Info (twitter,github,email) can be seen on aboutme-sidebar, those info only shown where ShowContactInfo == True
