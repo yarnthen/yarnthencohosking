@@ -18,7 +18,7 @@ The challenge about accountability is how can I prove that what I have deployed 
 
 **End Product**
 The end result of what I have created is something like the below.
-<img src="{{ site.urlimg }}Endresult.jpg" alt="">
+<img src="{{ site.urlimg }}/Endresult.jpg" alt="">
 
 
 You can just get the end product code at the bottom. I am presuming here that you would have some basic knowledge of powershell here in order for you to use the end product.

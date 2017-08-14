@@ -29,15 +29,15 @@ Create two SharePoint Custom Lists(shown below are the necessary columns)
 Title(Multi Line Text): This is the field where you key in the title of your request
 
 DateCreated(Calculated (calculation based on other columns)): This is to format the default Created field which have date and time format to YYYYMMDD format
-<div class="bordered"><img src="{{ site.urlimg }}datecreated.jpg" alt=""></div>
+<div class="bordered"><img src="{{ site.urlimg }}/datecreated.jpg" alt=""></div>
 
 Counter(Number):This is to store the counter which is the sequence that the ticket is created of the day. Set this field as hidden as it is not to be availalble for input (Go to advanced settings->Allow Managment of Content Type Yes->Go to the Item Content type and set the Counter field as hidden)
 
 CalculatedCounter(Calculated (calculation based on other columns)): This is to enhanced the counter with prefix 0s(zeros) in front so as to create a possibly of more numbers(eg. first ticket of the day will have counter 0001 so the last ticket of the day can run to 9999). You can also add some more prefix or suffix on your preference to differentiate the tickets (e.g. you can add INC in front to create a ticket number for incident ticket)
-<div class="bordered"><img src="{{ site.urlimg }}calculatedcounter.jpg" alt=""></div>
+<div class="bordered"><img src="{{ site.urlimg }}/calculatedcounter.jpg" alt=""></div>
 
 Ticket Number(Calculated (calculation based on other columns)): This is to store the unique ticket ID by combining the DateCreated and CalculatedCounter
-<div class="bordered"><img src="{{ site.urlimg }}ticketnumber.jpg" alt=""></div>
+<div class="bordered"><img src="{{ site.urlimg }}/ticketnumber.jpg" alt=""></div>
 
 You can also add other fields that you want for the type of ticketing system you are created (e.g. helpdesk ticket, incident ticket)
 
@@ -52,31 +52,31 @@ Counter | Number | This is the counter which is the sequence number of a ticket 
 
 
 Create the first and only entry in the ITRS SharePoint List. You just need to add a first entry by keying in something to the title field of the first record(Don't need to worry about what is keyed in as the SharePoint Workflow will work around it later). Do not key in anything in the counter field.  
-<div class="bordered"><img src="{{ site.urlimg }}ITRS.jpg" alt=""></div>
+<div class="bordered"><img src="{{ site.urlimg }}/ITRS.jpg" alt=""></div>
 <br>
 Now its time to create the workflow. Note I used a SharePoint 2010 Workflow for this despite using SharePoint 2013 as the 2010 Workflow is good enough to get this done. So you can do this in both SharePoint 2010 and SharePoint 2013.
-<div class="bordered"><img src="{{ site.urlimg }}SPWorkflow1.jpg" alt=""></div>
+<div class="bordered"><img src="{{ site.urlimg }}/SPWorkflow1.jpg" alt=""></div>
 
 Check for the calculated field DateCreated against the title in ITRS list(note we look for the entry we want in ITRS by finding the entry with ID 1, as there will only be one entry in ITRS permanently, the ID will always be 1. Do take note to never delete the entry in ITRS)
 
 If they don't tally, that means it is the first ticket created on that day and thus counter will be 1
 
-<div class="bordered"><img src="{{ site.urlimg }}SPWorkflow3.jpg" alt=""></div>
+<div class="bordered"><img src="{{ site.urlimg }}/SPWorkflow3.jpg" alt=""></div>
 Update the ITRS entry by changing the title to the value in DateCreated and counter in ITRS to 1
 
 
-<div class="bordered"><img src="{{ site.urlimg }}SPWorkflow2.jpg" alt=""></div>
+<div class="bordered"><img src="{{ site.urlimg }}/SPWorkflow2.jpg" alt=""></div>
 If they tally, that means the counter in Ticket System will need to increment by one. So create a variable(calc) to store the incremented number
 
-<div class="bordered"><img src="{{ site.urlimg }}SPWorkflow4.jpg" alt=""></div>
+<div class="bordered"><img src="{{ site.urlimg }}/SPWorkflow4.jpg" alt=""></div>
 Write the variable(calc) value to the counter in the current item of Ticket System
 
 
-<div class="bordered"><img src="{{ site.urlimg }}workflowsetting.jpg" alt=""></div>
+<div class="bordered"><img src="{{ site.urlimg }}/workflowsetting.jpg" alt=""></div>
 Set the workflow to run automatically when an item is created
 
 The unique ticket number will then be created as it is a calculated value based on the DateCreated field and CalculatedCounter field(which in turn is created from Counter field) 
-<div class="bordered"><img src="{{ site.urlimg }}autoticketid.jpg" alt=""></div>
+<div class="bordered"><img src="{{ site.urlimg }}/autoticketid.jpg" alt=""></div>
 
 
 
