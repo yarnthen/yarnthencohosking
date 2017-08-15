@@ -12,12 +12,12 @@ This post is written specifically for people who uses excel a lot. There are a l
 
 **Enabling the Developer Ribbon**
 
-This is something that comes out since excel 2010 where you cannot see the record macro(which is the means of us creating the automation). This is available in the Developer Ribbon only. So to get that out, you need to go to File tab->Options->Customize Ribbon->Main Tabs->check the Developer-> Click OK
+This is something that comes out since excel 2010 where you cannot see the record macro(which is the means of us creating the automation). This is available in the Developer Ribbon only. So to get that out, you need to go to File tab->Options->Customize Ribbon->Main Tabs->check the Developer-> Click OK.
 <img src="{{ site.urlimg }}/dev_ribbon.jpg" alt="">
 
 **Start recording macro**
 
-Go to the Developer Ribbon and click Record Macro.
+Go to the Developer Ribbon and click Record Macro.<br>
 <img src="{{ site.urlimg }}/record_macro_way.jpg" alt="">
 
 You will see the below window. Key in your macro name(optional unless you want some means to keep track of the names of your shortcut, if not keep as default). 
@@ -29,7 +29,7 @@ Click on the empty box below the shortcut key word to move the cursor there. Typ
 I recommend to add a Shift key to your shortcut as a lot of the default windows keyboard shortcuts are with Ctl only (e.g. Ctl+z will be undo Ctl+v is paste). Overriding them with macro activation might cause confusion to you especially if you use the keyboard shortcut often.
 
 
-Most important part of this is to select where to store macro in. Select Personal Macro Workbook. This will allow you to reuse all the macros you have created in all your excel spreadsheet.
+Most important part of this is to select where to store macro in. Select Personal Macro Workbook. This will allow you to reuse all the macros you have created in all your excel spreadsheet.<br>
 <img src="{{ site.urlimg }}/macro3.jpg" alt="">
 
 Then click Ok to start recording.
