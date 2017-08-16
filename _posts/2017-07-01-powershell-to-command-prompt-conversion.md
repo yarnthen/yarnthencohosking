@@ -10,7 +10,7 @@ comments: true
 
 This is something which came out from the Files Deployment Using Powershell series which I wrote. I have created the program as a ps1 file so that i can integrate it to my powershell sessions, if not I will need to copy the entire function (40+ lines of code) into my powershell session before i can start using the program. But all thanks to default security settings that are in place which prevent execution of scripts in powershell, you might get the below error.
 
-<img src="{{ site.urlimg }}/restricted-750x160.jpg" alt="">
+<img src="{{ site.baseurl }}/images/restricted-750x160.jpg" alt="">
 
 Simplest way to overcome this is to [get the rights to execute the ps1 scripts in powershell](https://blogs.msdn.microsoft.com/vivekkum/2009/01/29/powershell-first-step/). But hey, I am about doing things differently so I went about figuring another way to get things done.
 
@@ -179,12 +179,12 @@ powershell.exe -command “function Appimpl {;$filename = @();$fullfilename= @()
 
 The ending code above will actually be enough for you to run the program. But running it will show the below screenshot(which is very untidy)
 
-<img src="{{ site.urlimg }}/powershellugly-666x350.jpg" alt="">
+<img src="{{ site.baseurl }}/images/powershellugly-666x350.jpg" alt="">
 
 
 To make the program more presentable, add a <span style="color:red">@echo off</span> as the 1st line of the batch file and now the program will look more presentable as shown below
 
-<img src="{{ site.urlimg }}/powershelltidy.jpg" alt="">
+<img src="{{ site.baseurl }}/images/powershelltidy.jpg" alt="">
 
 So below will be my final code saved in batch file:<br>
 
@@ -195,6 +195,6 @@ powershell.exe -command “function Appimpl {;$filename = @();$fullfilename= @()
 
 <span style="color:#993366">**Do User Acceptance Test**</span>
 
-<img src="{{ site.urlimg }}/finaloutput.jpg" alt="">
+<img src="{{ site.baseurl }}/images/finaloutput.jpg" alt="">
 
 

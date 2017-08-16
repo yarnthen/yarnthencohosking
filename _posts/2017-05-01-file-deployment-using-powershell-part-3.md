@@ -9,7 +9,7 @@ comments: true
 ---
 
 
-<img src="{{ site.urlimg }}/Endresultafterenhancement.jpg" alt="">
+<img src="{{ site.baseurl }}/images/Endresultafterenhancement.jpg" alt="">
 
 In the previous post, I have explained the individual code segments that makes this program tick. Now is the time to link them all up.
 
