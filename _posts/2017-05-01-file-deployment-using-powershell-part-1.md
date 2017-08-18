@@ -8,6 +8,9 @@ tags: [Powershell]
 comments: true
 ---
 
+### Some Background Story
+I need a tool to do audit friendly deployment tasks. Bulk of my deployment activities involved simple copy and paste, but auditors have been challenging the method that I am using(select the file and copy and paste) as there is no accountability of this process. This issue can be easily resolved by having a automated deployment tool but that is a WIP with a project created for that. In the meantime, I need a short term solution to satisfy the auditors’ ‘hunger’ on the accountability. Basically, this tool will need to prove that what I deployed is the correct thing.
+
 I have gathered a short list of requirements of what my tool is supposed to achieve.
 
  1. This needs to work on Windows 7 Desktop
@@ -22,8 +25,7 @@ The end result of what I have created is something like the below.
 
 
 You can just get the end product code at the bottom. I am presuming here that you would have some basic knowledge of powershell here in order for you to use the end product.
-
-**Explanation without techie jargons**
+### Explanation without techie jargons
 
 The layman explanation of the code is as below:
 
