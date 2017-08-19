@@ -13,7 +13,7 @@ One of the main usage of SharePoint is a Document Management System where you ca
 ### SharePoint Library
 
 We will only need one SharePoint Document Library to achieve this. I have named the Document Library as Documents_With_Expiry. 
->I always create names of Library for use in SharePoint join together with underscore(_) because this will create an easier url to be displayed. Using a space is a norm but that results in convertion to %20 when it becomes a URL. You can change the name with a space as norm after the Library is created as the URL will not change anymore. Doing this way shortens the number of characters for URL from 3 to 1 which is beneficial if you use windows explorer mode in SharePoint often because Windows Explorer can only support up to 256 characters for path before you cannot open a file anymore.
+>I always create names of Library for use in SharePoint join together with underscore(_) because this will create an easier url to be displayed. Using a space is a norm but that results in conversion to %20 when it becomes a URL. You can change the underscore to a space as norm after the Library is created as the URL will not change anymore. Doing this way shortens the number of characters for URL from 3 to 1 which is beneficial if you use windows explorer mode in SharePoint often because Windows Explorer can only support up to 256 characters for path before you cannot open a file anymore.
 
 Go to Library->Settings->Versioning settings. Set Create a version each time you edit a file in this document library? to 'Create major and minor (draft) versions'. The rest to leave as default. <br>
 Go to Library->Settings->Versioning settings. Set Allow management of content types? to Yes. The rest to leave as default.<br>

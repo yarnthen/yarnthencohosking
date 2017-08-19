@@ -2,13 +2,13 @@
 layout: post
 title: "How to save time using excel(Part 1): Record Macro - No coding involved"
 excerpt: How to do things faster with excel
-summary: "This post is written specifically for people who uses excel a lot. There are a lot of tasks which are always repeated again and again when you work with excel. What if you can create a keyboard shortcut to all these repeatable tasks? I will teach you how to create your own one(my repetive tasks might be different from yours). First part of the series of two is to to teach how to record the repeatable tasks using macros."
+summary: "This post is written specifically for people who uses excel a lot. There are a lot of tasks which are always repeated again and again when you work with excel. What if you can create a keyboard shortcut to all these repeatable tasks? I will teach you how to create your own one(my repetitive tasks might be different from yours). First part of the series of two is to to teach how to record the repeatable tasks using macros."
 categories: Tutorials
 tags: [Excel, VBA, Macros]
 comments: true
 ---
 
-This post is written specifically for people who uses excel a lot. There are a lot of tasks which are always repeated again and again when you work with excel. What if you can create a keyboard shortcut to all these repeatable tasks? I will teach you how to create your own one.(my repetive tasks might be different from yours) First part of the series of two is to to teach how to record the repeatable tasks using macros.
+This post is written specifically for people who uses excel a lot. There are a lot of tasks which are always repeated again and again when you work with excel. What if you can create a keyboard shortcut to all these repeatable tasks? I will teach you how to create your own one.(my repetitive tasks might be different from yours) First part of the series of two is to to teach how to record the repeatable tasks using macros.
 
 **Enabling the Developer Ribbon**
 

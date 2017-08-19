@@ -21,8 +21,6 @@ body {
   color: $text-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
-  text-align: justify;
-  text-align-last: left;
 }
 
 
@@ -131,7 +129,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 
@@ -140,11 +138,11 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $brand-top-color;
+  color: #39c;
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-top-color, 25%);
+    color: #39c;
   }
 
   &:hover {
