@@ -4,6 +4,7 @@ title: "Extract a T24 BUILD.CONTROL Package using Powershell(Part 1): Introducti
 excerpt: "This post teaches you how to use PowerShell to extract T24 (Temenos Core Banking Product) Build Control Package"
 summary: "This post teaches you how to use PowerShell to extract T24 (Temenos Core Banking Product) Build Control Package"
 categories: Tutorials
+tags: [Powershell, T24, BUILD.CONTROL, BCON, Temenos]
 comments: true
 ---
 
