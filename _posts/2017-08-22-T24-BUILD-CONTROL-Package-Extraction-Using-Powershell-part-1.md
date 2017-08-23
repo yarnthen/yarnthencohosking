@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Extract a T24 BUILD.CONTROL Package using Powershell(Part 1): Introduction"
-excerpt: "This post teaches you how to use PowerShell to extract T24 (Temenos Core Banking Product) Build Control Package"
-summary: "This post teaches you how to use PowerShell to extract T24 (Temenos Core Banking Product) Build Control Package"
+excerpt: "This is post teaches you how to use PowerShell to extract T24 (Temenos Core Banking Product) Build Control Package"
+summary: "This is first of two posts to teach you how to use PowerShell to extract T24 (Temenos Core Banking Product) Build Control Package"
 categories: Tutorials
 tags: [Powershell, T24, BUILD.CONTROL, BCON, Temenos]
 comments: true
@@ -23,13 +23,13 @@ You can just get the end product code at the bottom. I am presuming here that yo
 3. Go Line 10 of the index file where it will indicate the file name(RECORD in T24). The individual items are separated by a special character ý. Each item sequence represent the sequence as per the filename in BCON Package (e.g. first item in the list correspond to the record name of the REC00001, 2nd will be REC00002)
 4. Create the folder based on 2 and copy the corresponding files and rename them to the record name based on what is derived from 3.
 
-
-If you want to go through the whole long explanation of how its done, I will discuss it in my next post.
+<a name = "allcode"></a>
+If you want to go through the whole long explanation of how its done, I will discuss it in my [next post]({% post_url 2017-08-23-T24-BUILD-CONTROL-Package-Extraction-Using-Powershell-part-2 %}).
 
 
 {% highlight powershell %}
 function ExtractBCON{
-    $input = Read-host "Input the foldername"
+    $input = Read-host "Input the package name"
     $filetoread="$input\DL.D_$input"
     $foldernames=(Get-Content $filetoread)[8]
     $filenames=(Get-Content $filetoread)[9]
