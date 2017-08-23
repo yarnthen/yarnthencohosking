@@ -116,7 +116,7 @@ Start of Deployment: '' +(get-date -format F).ToString() + [string][TimeZoneInfo
 <br>
 ### Output in table format
 
-Remember the final output you see in the [introduction]({% post_url 2017-05-01-file-deployment-using-powershell-part-1 %})? We will need an array to hold all the information and finally output all the results. One of the first ingredient at the start of this post called objects which is an array will be host to that.
+Remember the final output you see in the [introduction]({{ site.baseurl }}{% post_url 2017-05-01-file-deployment-using-powershell-part-1 %})? We will need an array to hold all the information and finally output all the results. One of the first ingredient at the start of this post called objects which is an array will be host to that.
 
 Next we will need to add records to the objects array. Records will be the name of the file, one record for the one at the source and another record for the one at the destination. Each entry should be able hold some information of its own. For example  a record for file named abc.txt should also have information in the same record its hashcode, timestamp and filesize.
 
@@ -150,5 +150,5 @@ write-output $objects | format-table -autosize
 {% endhighlight %}
 This command above will print out in a table and autosize to align it for each entry.
 
-Now that we have gotten all the core understanding of everything. It is time to link them all up. I will explain that in the [next post]({% post_url 2017-05-01-file-deployment-using-powershell-part-3 %})
+Now that we have gotten all the core understanding of everything. It is time to link them all up. I will explain that in the [next post]({{ site.baseurl }}{% post_url 2017-05-01-file-deployment-using-powershell-part-3 %})
 

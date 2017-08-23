@@ -14,7 +14,7 @@ I structure this post by breaking down the code according to the requirements. I
 
 <span style="color:#993366">**Reusable Function** </span>
 
-The main part of this is to generate the hash code of individual files. As this portion requires to be executed a lot of times(depends on number of files in the folder), the most efficient way to code this is by writing a function for generating of hash code so that it can be reused again and again. Explanation of the code is available in [my earlier post.]({% post_url 2017-06-01-hashcode-check-for-folder-contents-using-powershell-part-1 %}#hashcode)
+The main part of this is to generate the hash code of individual files. As this portion requires to be executed a lot of times(depends on number of files in the folder), the most efficient way to code this is by writing a function for generating of hash code so that it can be reused again and again. Explanation of the code is available in [my earlier post.]({{ site.baseurl }}{% post_url 2017-06-01-hashcode-check-for-folder-contents-using-powershell-part-1 %}#hashcode)
 
 
 

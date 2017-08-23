@@ -33,7 +33,7 @@ The layman explanation of the code is as below:
  2. Read the hash code/Size in byte/Date Modified of the file in A and B
  3. Publish the results in a tabular format
 <a name = "allcode"></a>
-If you want to go through the whole long explanation of how its done, just go to [next post]({% post_url 2017-05-01-file-deployment-using-powershell-part-2 %}).
+If you want to go through the whole long explanation of how its done, just go to [next post]({{ site.baseurl }}{% post_url 2017-05-01-file-deployment-using-powershell-part-2 %}).
 
 {% highlight powershell %}
 $filename = @()

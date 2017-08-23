@@ -24,7 +24,7 @@ You can just get the end product code at the bottom. I am presuming here that yo
 4. Create the folder based on 2 and copy the corresponding files and rename them to the record name based on what is derived from 3.
 
 <a name = "allcode"></a>
-If you want to go through the whole long explanation of how its done, I will discuss it in my [next post]({% post_url 2017-08-23-T24-BUILD-CONTROL-Package-Extraction-Using-Powershell-part-2 %}).
+If you want to go through the whole long explanation of how its done, I will discuss it in my [next post]({{ site.baseurl }}{% post_url 2017-08-23-T24-BUILD-CONTROL-Package-Extraction-Using-Powershell-part-2 %}).
 
 
 {% highlight powershell %}
@@ -51,4 +51,4 @@ function ExtractBCON{
 }ExtractBCON
 {% endhighlight %}
 
-You will need to input everything above in a PowerShell Prompt in order for it to work. If you want to run this as a batch file for easy reusability. Please refer to [this post]({% post_url 2017-07-01-powershell-to-command-prompt-conversion %}) for how to convert powershell to a batch file.
+You will need to input everything above in a PowerShell Prompt in order for it to work. If you want to run this as a batch file for easy reusability. Please refer to [this post]({{ site.baseurl }}{% post_url 2017-07-01-powershell-to-command-prompt-conversion %}) for how to convert powershell to a batch file.

@@ -74,4 +74,4 @@ function ExtractBCON{
 {% endhighlight %}
 
 ### Conclusion
-So that’s all to it. To see the code altogether, get to [last section of the introduction post]({% post_url 2017-08-22-T24-BUILD-CONTROL-Package-Extraction-Using-Powershell-part-1 %}#allcode).
+So that’s all to it. To see the code altogether, get to [last section of the introduction post]({{ site.baseurl }}{% post_url 2017-08-22-T24-BUILD-CONTROL-Package-Extraction-Using-Powershell-part-1 %}#allcode).

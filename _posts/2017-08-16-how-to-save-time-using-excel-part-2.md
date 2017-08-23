@@ -8,11 +8,11 @@ tags: [Excel, VBA, Macros]
 comments: true
 ---
 
-This post is written specifically for people who uses excel a lot. There are a lot of tasks which are always repeated again and again when you work with excel. What if you can create a keyboard shortcut to all these repeatable tasks? I will teach you how to create your own one. (my repetive tasks might be different from yours). Second and last part of the series teaches how to edit the code. First part of the series teaches you how to record your repeatable task using macros. Please go through the [first part]({% post_url 2017-08-15-how-to-save-time-using-excel-part-1 %}) if not you might be lost in the explanation below.
+This post is written specifically for people who uses excel a lot. There are a lot of tasks which are always repeated again and again when you work with excel. What if you can create a keyboard shortcut to all these repeatable tasks? I will teach you how to create your own one. (my repetive tasks might be different from yours). Second and last part of the series teaches how to edit the code. First part of the series teaches you how to record your repeatable task using macros. Please go through the [first part]({{ site.baseurl }}{% post_url 2017-08-15-how-to-save-time-using-excel-part-1 %}) if not you might be lost in the explanation below.
 
 **Uhide your Personal Macro Workbook**
 
-If you have followed through and done the [first part]({% post_url 2017-08-15-how-to-save-time-using-excel-part-1 %}), you will have know that your macro is actually stored in a location in your computer, just that it is not visible to you. Once you have saved the Personal Macro Workbook, excel will create PERSONAL.XLSB which is the baseline excel template that will be used when you create a new excel file. All your macros that you created and save in Personal Macro Workbook will be stored there. In order for us to modify the code of the macros that you recorded, you will need to unhide it. To do this, go to View Ribbon->Unhide->PERSONAL.XLSB->OK.<br>
+If you have followed through and done the [first part]({{ site.baseurl }}{% post_url 2017-08-15-how-to-save-time-using-excel-part-1 %}), you will have know that your macro is actually stored in a location in your computer, just that it is not visible to you. Once you have saved the Personal Macro Workbook, excel will create PERSONAL.XLSB which is the baseline excel template that will be used when you create a new excel file. All your macros that you created and save in Personal Macro Workbook will be stored there. In order for us to modify the code of the macros that you recorded, you will need to unhide it. To do this, go to View Ribbon->Unhide->PERSONAL.XLSB->OK.<br>
 <img src="{{ site.baseurl }}/images/unhidemacrowb.jpg" alt="">
 
 Doing so will open up the hidden Personal Macro Workbook.
@@ -45,7 +45,7 @@ You do not need to do another recording in order to create the automation anymor
 Your shortcuts will not be convenient for use unless you set a keyboard shortcut to it. To do that, save your PERSONAL.XLSB and click on Macros. This will show all the macros you have recorded and written using code. Select the macro you want to create a keyboard shortcut and click Options...<br>
 <img src="{{ site.baseurl }}/images/macrooptions.jpg" alt="">
 
-Now you should be able to see the Macro Options window to set your keyboard shortcut (See [Part 1]({% post_url 2017-08-15-how-to-save-time-using-excel-part-1 %}#keyboardshortcut) to know how to do it)
+Now you should be able to see the Macro Options window to set your keyboard shortcut (See [Part 1]({{ site.baseurl }}{% post_url 2017-08-15-how-to-save-time-using-excel-part-1 %}#keyboardshortcut) to know how to do it)
 
 **Example codes**
 

@@ -8,7 +8,7 @@ tags: [SharePoint]
 comments: true
 ---
 
-In my [previous post]({% post_url 2017-08-18-document-expiry-reminder-system-in-sharepoint %}) I have taught about how to create a reminder system for your SharePoint Document Library and that reminder is via email notification. Now I am going to teach how to create an email template for this. The email template could something as simple as just mentioning that the document is nearing expiration or more complex to the point of adding links to action triggers in the email itself
+In my [previous post]({{ site.baseurl }}{% post_url 2017-08-18-document-expiry-reminder-system-in-sharepoint %}) I have taught about how to create a reminder system for your SharePoint Document Library and that reminder is via email notification. Now I am going to teach how to create an email template for this. The email template could something as simple as just mentioning that the document is nearing expiration or more complex to the point of adding links to action triggers in the email itself
 
 
 ### Orientation of the Email Message Builder<a name = "orientation"></a>

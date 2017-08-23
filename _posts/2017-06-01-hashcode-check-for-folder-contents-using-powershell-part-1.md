@@ -20,7 +20,7 @@ The layman explanation of the code is as below:
 2. Read the hash code of each individual file
 3. Write hash code of each individual file to an xml
 4. Final output will be the hash code of the xml file
-You can just get the end product code at the bottom. If you want to go through the whole long explanation of how its done, just go to [next post]({% post_url 2017-06-01-hashcode-check-for-folder-contents-using-powershell-part-2 %}).
+You can just get the end product code at the bottom. If you want to go through the whole long explanation of how its done, just go to [next post]({{ site.baseurl }}{% post_url 2017-06-01-hashcode-check-for-folder-contents-using-powershell-part-2 %}).
 
 
 {% highlight powershell %}

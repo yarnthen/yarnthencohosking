@@ -46,4 +46,4 @@ Now you need to save the Personal Macro Workbook so that you can reuse the recor
 
 Click on Save and you are done. Now your recorded macro will be available for use in excel with your assigned keyboard shortcut.
 
-The 2nd part of this is more technical as it would require some coding to be done. But nothing too difficult as VBA(excel coding language) can be written in a very layman manner and in addition the coding will be very minimal. But there will be much more things you can do reading the next post (some things cannot be recorded but can be amended from what macro has recorded and modified via some code).
+The 2nd part of this is more technical as it would require some coding to be done. But nothing too difficult as VBA(excel coding language) can be written in a very layman manner and in addition the coding will be very minimal. But there will be much more things you can do reading the [next post]({{ site.baseurl }}{% post_url 2017-08-16-how-to-save-time-using-excel-part-2 %})(some things cannot be recorded but can be amended from what macro has recorded and modified via some code).

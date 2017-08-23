@@ -19,7 +19,7 @@ In order to run your program, you will need to name it first. I am calling mine 
 {% highlight powershell %}
 function Appimpl {}
 {% endhighlight %}
-We will need to declare this program as a function so that we can trigger the program by keying in the name in powetshell. Between the opening and closing curly bracket are where all the code will be. 
+We will need to declare this program as a function so that we can trigger the program by keying in the name in powershell. Between the opening and closing curly bracket are where all the code will be. 
 <br><br>
 ### Start with the ingredients and user input
 
@@ -112,4 +112,4 @@ write-output $objects | format-table -autosize
 ‘End of Deployment: ‘ +(get-date -format F).ToString() + [string][TimeZoneInfo]::Local.DisplayName
 {% endhighlight %}
 
-So that’s all to it. To see the code altogether, get to [last section of the introduction post]({% post_url 2017-05-01-file-deployment-using-powershell-part-1 %}#allcode).
+So that’s all to it. To see the code altogether, get to [last section of the introduction post]({{ site.baseurl }}{% post_url 2017-05-01-file-deployment-using-powershell-part-1 %}#allcode).
