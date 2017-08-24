@@ -96,5 +96,5 @@ Last part will be to hash the hash.xml created so as to achieve our end state of
 
 <span style="color:#993366" font-family="arial black">**Try it out!**</span>
 
-Do some testing with the program. Move the folder around and try to generate the hash to see if it is still the same. Make some changes and check the hash again. That is all for this post. Remember you can get the full code in the [introduction post]({% post_url 2017-06-01-hashcode-check-for-folder-contents-using-powershell-part-1 %}#allcode)
+Do some testing with the program. Move the folder around and try to generate the hash to see if it is still the same. Make some changes and check the hash again. That is all for this post. Remember you can get the full code in the [introduction post]({{ site.baseurl }}{% post_url 2017-06-01-hashcode-check-for-folder-contents-using-powershell-part-1 %}#allcode)
 

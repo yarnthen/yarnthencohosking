@@ -217,7 +217,7 @@
   p { padding:$spacing-unit/5 0; } 
   //  margin-bottom: $spacing-unit;
   h1 { 
-    font-size: 38px;
+    font-size: 30px;
     line-height:1em;
     @include media-query($on-laptop){
       font-size: 36px;

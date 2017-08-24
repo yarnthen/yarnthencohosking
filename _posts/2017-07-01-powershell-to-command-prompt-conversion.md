@@ -85,8 +85,8 @@ $objects=@()<br>
 ======AFTER====================================<br>
 <span style="color:red">
 function Appimpl{<br>
-$filename = @()<br>
-$fullfilename= @()<br>
+$filename=@()<br>
+$fullfilename=@()<br>
 $objects=@()<br>
 </span>
 </span>
