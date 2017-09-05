@@ -1,10 +1,10 @@
 ### Site info:
 title: Yarn Then Blog
-tagline: Just a blog to share my thoughts and ideas
+tagline: Just a blog to share thoughts and ideas of efficiency & effectiveness
 author: Yarn Then Cohos King
 email: yarnthen@gmail.com
-description: "Freshman21 is a Jekyll blog theme." # You can edit this line in _config.yml. It will appear in your document head meta and in your feed.xml site description
-keywords: "Jekyll, theme, Freshman21"
+description: "Blog to share thoughts and ideas of efficiency & effectiveness" # You can edit this line in _config.yml. It will appear in your document head meta and in your feed.xml site description
+keywords: "Blog, Yarn, Then, SharePoint, Powershell, effeciency, effectiveness, vbscript, vba, excel, Windows, PC, Outlook, Command, Prompt, Batch, Task Scheduler"
 baseurl: "/yarnthencohosking" # the subpath of your site, e.g. /blog/
 url: "https://yarnthen.github.io" # the base hostname & protocol for your site
 locale: en_US
@@ -12,7 +12,7 @@ locale: en_US
 ### Personal info and site tools info:
 disqus_shortname: yarnthen
 favicon:     "/images/favicon.ico"
-aboutme: Hi, I am Yarn Then Cohos King. Welcome to my blog. I have created a lot of small ultilites using Excel, Powershell, SharePoint to make my life and others better. Now I am sharing these as well as my thoughts and ideas to benefit others via this blog.  # these are shown on aboutme-sidebar.
+aboutme: Hi, I am Yarn Then Cohos King. Welcome to my blog. I am someone who always look to find more effective or efficient ways of gettings things done. Now I am sharing these as well as my thoughts and ideas to benefit others via this blog.  # these are shown on aboutme-sidebar.
 aboutme_photo: "/images/yarnthen.png"
 google_analytics_key: UA-104524488-1 # put YOUR key here to enable tracking! (blank to disable)
 ### Site setting:
