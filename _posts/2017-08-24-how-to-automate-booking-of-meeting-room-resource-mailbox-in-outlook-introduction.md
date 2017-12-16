@@ -4,7 +4,7 @@ title: "How to automate booking of meeting room(resource mailbox in Outlook): In
 excerpt: This post teaches you how to automate a booking of resource (e.g. Meeting Room) which is via a resource MailBox in Outlook (Exchange)
 summary: This post teaches you how to automate a booking of resource (e.g. Meeting Room) which is via a resource MailBox in Outlook (Exchange)
 categories: Tutorials
-tags: [vbscript, Outlook, Windows, Task Scheduler]
+tags: [vbscript, Outlook, Windows, Task Scheduler, Scheduling, Meeting, Schedule]
 comments: true
 ---
 
