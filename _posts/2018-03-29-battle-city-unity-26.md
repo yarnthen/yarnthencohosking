@@ -192,4 +192,4 @@ That's all the Bonus Crates! Prefab the Spade crate and then update the GamePlay
 
 That will be the end of my tutorial series for Battle City. There are of course other stuffs which I did not cover such as sounds and start menu. I want to get feedback on my tutorials from you all before working on those so that I can improve myself. So please put in the comments how I can improve! Thanks.
 
-The game link for testing is here.
+The game [link](https://yarnthen.itch.io/battle-city-recreated-in-unity){:target="_blank"} for testing is here.
