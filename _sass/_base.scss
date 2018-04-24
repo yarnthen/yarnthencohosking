@@ -8,7 +8,10 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
-
+keyword {
+  font-weight: bold;
+  color:  #0509fc;
+}
 
 /**
  * Basic styling
@@ -17,7 +20,7 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
-  font-weight: 300;
+  font-weight: 400;
   color: $text-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
@@ -91,7 +94,11 @@ ul, ol, dl, figure,
  */
 img {
   max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   vertical-align: middle;
+  border:1px solid #000;
 }
 
 
@@ -188,7 +195,21 @@ blockquote{
   }
 }
 
+.warning {
+  margin: 14px 0;
+  padding: 10px 10px 10px;
+  padding-left: 10px;
+  border: 1px solid #000000;
+  background-color: #ffffcc;
+}
 
+.info {
+  margin: 14px 0;
+  padding: 10px 10px 10px;
+  padding-left: 10px;
+  border: 1px solid #000000;
+  background-color: #e7f3fe;
+}
 
 /**
  * Code formatting
@@ -198,6 +219,7 @@ pre,code {
   border-radius: 3px;
   background-color: $code-backgroud-color;
   color: $code-font-color;
+  line-height: 20px;
 }
 
 code {
@@ -238,7 +260,26 @@ pre {
 }
 
 
+Note{
+border-radius:4px;
+font-family:'Open Sans',sans-serif;
+padding:14px!important;
+margin-top:5px;
+margin-bottom:17px;
+line-height:25.88px;
+font-style:normal;
+color:#black;
+background-color:#edf0d5;
+border:1px solid #000;
 
+  &:hover {
+    color: #454545;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
 /**
  * Clearfix
  */
