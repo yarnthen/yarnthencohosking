@@ -75,7 +75,7 @@ foreach (PropertyModification prefabMod in prefabMods)
 {
     if (prefabMod.propertyPath.ToString() != "m_LocalPosition.x" && prefabMod.propertyPath.ToString() != "m_LocalPosition.y" && prefabMod.propertyPath.ToString() != "m_LocalPosition.z" && prefabMod.propertyPath.ToString() != "m_LocalRotation.x" && prefabMod.propertyPath.ToString() != "m_LocalRotation.y" && prefabMod.propertyPath.ToString() != "m_LocalRotation.z" && prefabMod.propertyPath.ToString() != "m_LocalRotation.w" && prefabMod.propertyPath.ToString() != "m_RootOrder" && prefabMod.propertyPath.ToString() != "m_IsActive")
     {
-        fontColor = prefabModFontColor;
+        fontColor = Color.white;
         break;
     }
 }
