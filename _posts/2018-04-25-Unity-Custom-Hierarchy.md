@@ -73,7 +73,7 @@ Now on to my changes. To differentiate out a prefab instance that has changes fr
 PropertyModification[] prefabMods = PrefabUtility.GetPropertyModifications(obj);
 foreach (PropertyModification prefabMod in prefabMods)
 {
-    if (prefabMod.propertyPath.ToString() != "m_LocalPosition.x" && prefabMod.propertyPath.ToString() != "m_LocalPosition.y" && prefabMod.propertyPath.ToString() != "m_LocalPosition.z" && prefabMod.propertyPath.ToString() != "m_LocalRotation.x" && prefabMod.propertyPath.ToString() != "m_LocalRotation.y" && prefabMod.propertyPath.ToString() != "m_LocalRotation.z" && prefabMod.propertyPath.ToString() != "m_LocalRotation.w" && prefabMod.propertyPath.ToString() != "m_RootOrder" && prefabMod.propertyPath.ToString() != "m_IsActive")
+    if (prefabMod.propertyPath.ToString() != "m_Name" && prefabMod.propertyPath.ToString() != "m_LocalPosition.x" && prefabMod.propertyPath.ToString() != "m_LocalPosition.y" && prefabMod.propertyPath.ToString() != "m_LocalPosition.z" && prefabMod.propertyPath.ToString() != "m_LocalRotation.x" && prefabMod.propertyPath.ToString() != "m_LocalRotation.y" && prefabMod.propertyPath.ToString() != "m_LocalRotation.z" && prefabMod.propertyPath.ToString() != "m_LocalRotation.w" && prefabMod.propertyPath.ToString() != "m_RootOrder" && prefabMod.propertyPath.ToString() != "m_IsActive")
     {
         fontColor = Color.white;
         break;
@@ -109,10 +109,12 @@ if (Selection.instanceIDs.Contains(instanceID))
 ### Preparation for Editor
 To create an editor for changing the colors on the fly, we will need to declare some public static variables. To be specific, these will be color variables which will be used to update the color. They will default to their original color.
 
+{% highlight csharp%}
 public static Color gameObjectFontColor = Color.black;
 public static Color prefabOrgFontColor = Color.black;
 public static Color prefabModFontColor = Color.white;
 public static Color inActiveColor = new Color(0.01f, 0.4f, 0.25f);
+{% endhighlight %}
 
 ### Merging all together
 That is all for the code walkthrough. Below is the full code for the Custom Hierarchy. Next up will be creating the Editor.
@@ -158,7 +160,7 @@ public class CustomHierarchy : MonoBehaviour
                 PropertyModification[] prefabMods = PrefabUtility.GetPropertyModifications(obj);
                 foreach (PropertyModification prefabMod in prefabMods)
                 {
-                    if (prefabMod.propertyPath.ToString() != "m_LocalPosition.x" && prefabMod.propertyPath.ToString() != "m_LocalPosition.y" && prefabMod.propertyPath.ToString() != "m_LocalPosition.z" && prefabMod.propertyPath.ToString() != "m_LocalRotation.x" && prefabMod.propertyPath.ToString() != "m_LocalRotation.y" && prefabMod.propertyPath.ToString() != "m_LocalRotation.z" && prefabMod.propertyPath.ToString() != "m_LocalRotation.w" && prefabMod.propertyPath.ToString() != "m_RootOrder" && prefabMod.propertyPath.ToString() != "m_IsActive")
+                    if (prefabMod.propertyPath.ToString() != "m_Name" && prefabMod.propertyPath.ToString() != "m_LocalPosition.x" && prefabMod.propertyPath.ToString() != "m_LocalPosition.y" && prefabMod.propertyPath.ToString() != "m_LocalPosition.z" && prefabMod.propertyPath.ToString() != "m_LocalRotation.x" && prefabMod.propertyPath.ToString() != "m_LocalRotation.y" && prefabMod.propertyPath.ToString() != "m_LocalRotation.z" && prefabMod.propertyPath.ToString() != "m_LocalRotation.w" && prefabMod.propertyPath.ToString() != "m_RootOrder" && prefabMod.propertyPath.ToString() != "m_IsActive")
                     {
                         fontColor = prefabModFontColor;
                         break;
