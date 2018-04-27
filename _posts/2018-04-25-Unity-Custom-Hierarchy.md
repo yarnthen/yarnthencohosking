@@ -4,7 +4,7 @@ title: "How to create a custom Hierarchy for your Unity 3D with an editor"
 excerpt: How to create a custom Hierarchy for your Unity 3D with an editor
 summary: This post teaches how to customize your hierarchy window in Unity 3D Editor
 categories: [How To]
-tags: [Unity, Unity 3D, Hierarchy, Customize, Customise, Editor, Window, C Sharp, gaming, classic]
+tags: [Unity, Unity 3D, Hierarchy, Customize, Customise, Editor, Window, C Sharp, gaming]
 comments: true
 ---
 
