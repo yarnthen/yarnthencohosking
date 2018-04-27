@@ -186,7 +186,6 @@ Code for the editor is quite straightforward because of the prep works we did ea
 {% highlight csharp%}
 using UnityEditor;
 
-[CustomEditor(typeof(HierarchyEditor))]
 public class HierarchyEditor : EditorWindow
 {
     [MenuItem("Tools/Hierarchy Editor")]
