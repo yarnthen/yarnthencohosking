@@ -4,7 +4,7 @@ title: "Custom shortcuts for common tasks in Unity"
 excerpt: Custom shortcuts for common tasks in Unity
 summary: This post teaches how to create a script to do common tasks in Unity editor easily
 categories: [How To]
-tags: [Unity, Unity 3D, Hierarchy, Customize, Customise, Editor, Window, C Sharp, gaming, menu, shortcut]
+tags: [Unity, Unity 3D, Hierarchy, Customize, Customise, Editor, Window, C Sharp, gaming, menu, shortcut, reset, transform, lock, inspector, save, prefab, revert, apply, name]
 comments: true
 ---
 
