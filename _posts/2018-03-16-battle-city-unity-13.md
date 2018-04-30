@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Recreate Battle City in Unity Part 12 : Level Manager"
-excerpt: Recreate Battle City in Unity Part 12
+title: "Battle City in Unity Part 12 : Level Manager"
+excerpt: Battle City in Unity Part 12
 summary: This post is part 12 to the series of post detailing how I recreate Battle City in Unity
 categories: [Tutorials]
 tags: [Unity, Unity 3D, Battle City, NES, retro, tilemap, tile, tanks, gaming, classic]
 comments: true
+series: "Recreate Battle City in Unity"
 ---
+{% include serieswithintro.html %}
 
 I intend to cover the part of the <keyword>Game Manager</keyword> handling the <keyword>spawning of player and enemies</keyword>. Then I realized it would be tough to explain without going through the <keyword>Level Manager</keyword> first. The Level Manager is like a level editor of sorts where we use to specify the differences between each level. The differences are the <keyword>number of each type of enemy tanks in the level</keyword> and also the <keyword>Stage Number</keyword>. 
 
@@ -46,3 +48,4 @@ public class LevelManager : MonoBehaviour {
 {% endhighlight %}
 
 With the LevelManager ready, we can move on to the [GameManager]({{ site.baseurl }}{% post_url 2018-03-17-battle-city-unity-14 %}) again to discuss how we can trigger the spawning of enemies and player.
+{% include serieswithintro.html %}

@@ -20,30 +20,30 @@ One easy way to do it is just to use the ID field that is a default field in a S
 
 I decided to create a unique id based on the sequence of the entry created per day prefixed by the date. (e.g the fist entry created on 21st Jan 2017 will be 201701210001 and the first entry created on 22nd Jan 2017 will be 201701220001)
 
-**Below are the detailed steps as how to achieve it**
+## Detailed steps
 
 Create two SharePoint Custom Lists(shown below are the necessary columns)
 
-**Sharepoint List 1:** Ticket System  (The main list where the unique ticket number is shown. You can customise it by add any additional fields you like)
+<keyword>Sharepoint List 1: Ticket System</keyword> 
+This is the main list where the unique ticket number is shown. You can customise it by add any additional fields you like.
 
-Title(Multi Line Text): This is the field where you key in the title of your request
+1.  **Title (Multi Line Text):** This is the field where you key in the title of your request
 
-DateCreated(Calculated (calculation based on other columns)): This is to format the default Created field which have date and time format to YYYYMMDD format
-<div class="bordered"><img src="{{ site.baseurl }}/images/datecreated.jpg" alt=""></div>
+2. **DateCreated(Calculated (calculation based on other columns)):** This is to format the default Created field which have date and time format to YYYYMMDD format
+<img src="{{ site.baseurl }}/images/datecreated.jpg" alt="">
 
-Counter(Number):This is to store the counter which is the sequence that the ticket is created of the day. Set this field as hidden as it is not to be availalble for input (Go to advanced settings->Allow Managment of Content Type Yes->Go to the Item Content type and set the Counter field as hidden)
+3. **Counter (Number):** This is to store the counter which is the sequence that the ticket is created of the day. Set this field as hidden as it is not to be availalble for input (Go to advanced settings->Allow Managment of Content Type Yes->Go to the Item Content type and set the Counter field as hidden)
 
-CalculatedCounter(Calculated (calculation based on other columns)): This is to enhanced the counter with prefix 0s(zeros) in front so as to create a possibly of more numbers(eg. first ticket of the day will have counter 0001 so the last ticket of the day can run to 9999). You can also add some more prefix or suffix on your preference to differentiate the tickets (e.g. you can add INC in front to create a ticket number for incident ticket)
-<div class="bordered"><img src="{{ site.baseurl }}/images/calculatedcounter.jpg" alt=""></div>
+4. **CalculatedCounter (Calculated (calculation based on other columns)):** This is to enhanced the counter with prefix 0s(zeros) in front so as to create a possibly of more numbers(eg. first ticket of the day will have counter 0001 so the last ticket of the day can run to 9999). You can also add some more prefix or suffix on your preference to differentiate the tickets (e.g. you can add INC in front to create a ticket number for incident ticket)
+<img src="{{ site.baseurl }}/images/calculatedcounter.jpg" alt="">
 
-Ticket Number(Calculated (calculation based on other columns)): This is to store the unique ticket ID by combining the DateCreated and CalculatedCounter
-<div class="bordered"><img src="{{ site.baseurl }}/images/ticketnumber.jpg" alt=""></div>
+5. **Ticket Number (Calculated (calculation based on other columns)):** This is to store the unique ticket ID by combining the DateCreated and CalculatedCounter
+<img src="{{ site.baseurl }}/images/ticketnumber.jpg" alt="">
 
 You can also add other fields that you want for the type of ticketing system you are created (e.g. helpdesk ticket, incident ticket)
 
-<br>
-**Sharepoint List 2** <br>
-ITRS (For Reference purpose to create the unique ID, this list will only have a single entry at all times)
+<keyword>Sharepoint List 2: ITRS </keyword>
+For reference purpose to create the unique ID, this list will only have a single entry at all times
 
 Fields | Type | Explanation
 ------------- | ------------- | -------------
@@ -52,7 +52,7 @@ Counter | Number | This is the counter which is the sequence number of a ticket 
 
 
 Create the first and only entry in the ITRS SharePoint List. You just need to add a first entry by keying in something to the title field of the first record(Don't need to worry about what is keyed in as the SharePoint Workflow will work around it later). Do not key in anything in the counter field.  
-<div class="bordered"><img src="{{ site.baseurl }}/images/ITRS.jpg" alt=""></div>
+<img src="{{ site.baseurl }}/images/ITRS.jpg" alt="">
 <br>
 
 ### SharePoint Workflow

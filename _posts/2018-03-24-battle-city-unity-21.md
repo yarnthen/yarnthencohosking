@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Recreate Battle City in Unity Part 20 : Bonus Crates - Tank Extra Live"
-excerpt: Recreate Battle City in Unity Part 20
+title: "Battle City in Unity Part 20 : Bonus Crates - Tank Extra Live"
+excerpt: Battle City in Unity Part 20
 summary: This post is part 20 to the series of post detailing how I recreate Battle City in Unity
 categories: [Tutorials]
 tags: [Unity, Unity 3D, Battle City, NES, retro, tilemap, tile, tanks, gaming, classic]
 comments: true
+series: "Recreate Battle City in Unity"
 ---
+{% include serieswithintro.html %}
 
 Let's start with the easiest of the Bonus Crates - Tank bonus crate which grants 1 extra live to the player.
 
@@ -70,3 +72,4 @@ That's all! We can test it already. <keyword>Create a prefab of 1up</keyword> by
 <img src="{{ site.baseurl }}/images/BattleCity_BonusLive_3.gif" alt="">
 
 Testing successfully! We see that the crates only get spawned in areas where we can reach and also the effects(plus 1 life) is working! You can prefab the 1up now. Next post we will talk about the invincibility crate.
+{% include serieswithintro.html %}

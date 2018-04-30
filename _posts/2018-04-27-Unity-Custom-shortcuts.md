@@ -59,12 +59,9 @@ static void ResetName()
 private static void Rename(GameObject go)
 {
     int start = go.name.IndexOf("(");
-    print(start);
     int end = go.name.IndexOf(")");
-    print(end);
     if (start != -1 && end != -1 && start < end)
     {
-        print("rename");
         go.name = go.name.Substring(0, start);
     }
 }
@@ -122,6 +119,36 @@ static void SaveChangesToPrefab()
 {% endhighlight %}
 <div class="info">Note: I did a revert to prefab after saving the changes to the prefab. This is due to me noticing that it will duplicate the components(e.g., if I add a box collider as a change and apply the changes to the prefab, it will add another box collider to the game object again). So I overcome it by reverting the game object back to prefab after saving the changes.</div>
 <img src="{{ site.baseurl }}/images/unity_Custom_Shortcuts_5.gif" alt="">
+### Toggle Debug or Normal Inspector
+This one is a bit tricky as the methods to use are not exposed(set inspector mode to debug or normal). So we need to use System.Reflection to invoke the method. In addition, to invoke the method, we need to get the Type InspectorWindow which again is not exposed, and I work around it by doing a Resources.FindObjectsOfTypeAll<EditorWindow> and do a foreach until I get the InspectorWindow type. There could be a better way for this, leave your thoughts in the comments if need be. Thanks. 
+<div class="info">Like the Lock Unlock Inspector, this only works for the active Inspector Window.</div>
+{% highlight csharp%}
+    [MenuItem("Tools/Toggle Debug or Normal &d")]
+    static void ToggleDebugNormalView()
+    {
+        EditorWindow inspectorWindow;
+        EditorWindow[] editorWindows = Resources.FindObjectsOfTypeAll<EditorWindow>();
+        foreach (EditorWindow editorWindow in editorWindows)
+        {
+            if (editorWindow.GetType().Name == "InspectorWindow")
+            {
+                if (EditorWindow.focusedWindow == editorWindow)
+                {
+                    inspectorWindow = editorWindow;
+                    Type inspector = inspectorWindow.GetType();
+                    MethodInfo methodInfo = inspector.GetMethod("SetMode", BindingFlags.NonPublic | BindingFlags.Instance);
+                    if (inspector.GetField("m_InspectorMode").GetValue(inspectorWindow).ToString() == "Debug")
+                    {
+                        methodInfo.Invoke(inspectorWindow, new object[] { InspectorMode.Normal });
+                    }
+                    else methodInfo.Invoke(inspectorWindow, new object[] { InspectorMode.Debug });
+                    break;
+                }
+            }
+        }
+    }
+{% endhighlight %}
+<img src="{{ site.baseurl }}/images/unity_Custom_Shortcuts_6.gif" alt="">
 ### Outro
 One of the things I did not mention is on <keyword>Undo.RegisterCompleteObjectUndo</keyword>. This is to do a snapshot of the object before we make the change so that we can undo it later if we want. [thebeardphantom](https://gist.github.com/thebeardphantom/ea6362139ee195a8abce){:target="_blank"} uses <keyword>Undo.RecordObjects</keyword>. That did not record the snapshot of the prior of some of my tasks(e.g., revert prefab) so I used RegisterCompleteObjectUndo instead. Below is the full code. One last thing i added is the <keyword>#if (UNITY_EDITOR)</keyword> so that this script will not get picked up when you build your game. Not sure why, without the #if statement, it will crash the build.
 {% highlight csharp%}
@@ -190,15 +217,36 @@ public class MyMenuItem : MonoBehaviour
         ActiveEditorTracker.sharedTracker.isLocked = !ActiveEditorTracker.sharedTracker.isLocked;
         ActiveEditorTracker.sharedTracker.activeEditors[0].Repaint();
     }
+        [MenuItem("Tools/Toggle Debug or Normal &d")]
+    static void ToggleDebugNormalView()
+    {
+        EditorWindow inspectorWindow;
+        EditorWindow[] editorWindows = Resources.FindObjectsOfTypeAll<EditorWindow>();
+        foreach (EditorWindow editorWindow in editorWindows)
+        {
+            if (editorWindow.GetType().Name == "InspectorWindow")
+            {
+                if (EditorWindow.focusedWindow == editorWindow)
+                {
+                    inspectorWindow = editorWindow;
+                    Type inspector = inspectorWindow.GetType();
+                    MethodInfo methodInfo = inspector.GetMethod("SetMode", BindingFlags.NonPublic | BindingFlags.Instance);
+                    if (inspector.GetField("m_InspectorMode").GetValue(inspectorWindow).ToString() == "Debug")
+                    {
+                        methodInfo.Invoke(inspectorWindow, new object[] { InspectorMode.Normal });
+                    }
+                    else methodInfo.Invoke(inspectorWindow, new object[] { InspectorMode.Debug });
+                    break;
+                }
+            }
+        }
+    }
     private static void Rename(GameObject go)
     {
         int start = go.name.IndexOf("(");
-        print(start);
         int end = go.name.IndexOf(")");
-        print(end);
         if (start != -1 && end != -1 && start < end)
         {
-            print("rename");
             go.name = go.name.Substring(0, start);
         }
     }

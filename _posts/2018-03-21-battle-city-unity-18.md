@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Recreate Battle City in Unity Part 17 : Score Calculation"
-excerpt: Recreate Battle City in Unity Part 17
+title: "Battle City in Unity Part 17 : Score Calculation"
+excerpt: Battle City in Unity Part 17
 summary: This post is part 15 to the series of post detailing how I recreate Battle City in Unity
 categories: [Tutorials]
 tags: [Unity, Unity 3D, Battle City, NES, retro, tilemap, tile, tanks, gaming, classic]
 comments: true
+series: "Recreate Battle City in Unity"
 ---
+{% include serieswithintro.html %}
 
 I would like you to go back and create the other 3 enemy tanks using the EnemyTank prefab you already have. You can do a recap on [Part 3]({{ site.baseurl }}{% post_url 2018-03-07-battle-city-unity-4 %}) if you are unsure. Set the following below for the tanks as well
 
@@ -262,5 +264,4 @@ Now go back to Stage 1 and start the game!
 ### Time to design stages
 
 Yeah! Its working and it will be very easy to create new stages.  Next post will be the last and it's on the Battle Status Board.
-
-
+{% include serieswithintro.html %}

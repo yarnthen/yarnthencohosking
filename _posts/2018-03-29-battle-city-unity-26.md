@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Recreate Battle City in Unity Part 25 : Bonus Crates - Shovel"
-excerpt: Recreate Battle City in Unity Part 25
+title: "Battle City in Unity Part 25 : Bonus Crates - Shovel"
+excerpt: Battle City in Unity Part 25
 summary: This post is part 25 to the series of post detailing how I recreate Battle City in Unity
 categories: [Tutorials]
 tags: [Unity, Unity 3D, Battle City, NES, retro, tilemap, tile, tanks, gaming, classic]
 comments: true
+series: "Recreate Battle City in Unity"
 ---
+{% include serieswithintro.html %}
 
 Hang in there; we are almost done with the tutorials. After that, you can enjoy creating your stages. Let's go and create the last bonus crate.
 
@@ -193,3 +195,4 @@ That's all the Bonus Crates! Prefab the Spade crate and then update the GamePlay
 That will be the end of my tutorial series for Battle City. There are of course other stuffs which I did not cover such as sounds and start menu. I want to get feedback on my tutorials from you all before working on those so that I can improve myself. So please put in the comments how I can improve! Thanks.
 
 The game [link](https://yarnthen.itch.io/battle-city-recreated-in-unity){:target="_blank"} for testing is here.
+{% include serieswithintro.html %}

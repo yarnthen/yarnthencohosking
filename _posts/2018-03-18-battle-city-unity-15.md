@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Recreate Battle City in Unity Part 14 : The Gamemaker - Stage Cleared or Game Over"
-excerpt: Recreate Battle City in Unity Part 14
+title: "Battle City in Unity Part 14 : The Gamemaker - Stage Cleared or Game Over"
+excerpt: Battle City in Unity Part 14
 summary: This post is part 14 to the series of post detailing how I recreate Battle City in Unity
 categories: [Tutorials]
 tags: [Unity, Unity 3D, Battle City, NES, retro, tilemap, tile, tanks, gaming, classic]
 comments: true
+series: "Recreate Battle City in Unity"
 ---
+{% include serieswithintro.html %}
 
 Let's look at what happened during Game Over or Stage Clear.(with fast fwd enabled)
 
@@ -113,3 +115,4 @@ Hooray! It's working, with some error at the end as it cannot find the Score Sce
 <img src="{{ site.baseurl }}/images/BattleCity_StageClear_GameOver_3.png" alt="">
 
 Now you are able to create your own stage by dragging the prefab of Stage Essential and MasterTracker to a new scene! Try create a <keyword>Stage2</keyword> Scene by painting a new stage. [Next post]({{ site.baseurl }}{% post_url 2018-03-19-battle-city-unity-16 %}), we are going to talk about creating the electricity animation(Temporary Invincibility) for the Player Tank.
+{% include serieswithintro.html %}

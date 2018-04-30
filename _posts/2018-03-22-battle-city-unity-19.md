@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Recreate Battle City in Unity Part 18 : Battle Status Board"
-excerpt: Recreate Battle City in Unity Part 18
+title: "Battle City in Unity Part 18 : Battle Status Board"
+excerpt: Battle City in Unity Part 18
 summary: This post is part 18 to the series of post detailing how I recreate Battle City in Unity
 categories: [Tutorials]
 tags: [Unity, Unity 3D, Battle City, NES, retro, tilemap, tile, tanks, gaming, classic]
 comments: true
+series: "Recreate Battle City in Unity"
 ---
+{% include serieswithintro.html %}
 
 This post is to design the Battle Status Board(BSB) which is the information panel to right of the Gameplay area. The code itself is not a lot, but creating the design for it is(at least for me). 
 
@@ -142,3 +144,4 @@ Let's try out the game and see that it gets updated. I will first start the game
 Well, it took a while before the enemy decide to destroy me. But everything tested successfully! 
 
 Next up will be on the Bonus crates creation.
+{% include serieswithintro.html %}

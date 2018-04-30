@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Recreate Battle City in Unity Part 16 : Exploding Tank animation"
-excerpt: Recreate Battle City in Unity Part 16
+title: "Battle City in Unity Part 16 : Exploding Tank animation"
+excerpt: Battle City in Unity Part 16
 summary: This post is part 16 to the series of post detailing how I recreate Battle City in Unity
 categories: [Tutorials]
 tags: [Unity, Unity 3D, Battle City, NES, retro, tilemap, tile, tanks, gaming, classic]
 comments: true
+series: "Recreate Battle City in Unity"
 ---
+{% include serieswithintro.html %}
 
 
 This will be a short post as it is more about the animation than anything else. You will need a explosion sprite for effects.
@@ -116,6 +118,4 @@ Let's try out with just one enemy tank to see if the explosion animation is ok.
 <img src="{{ site.baseurl }}/images/BattleCity_Explosion_13.gif" alt="">
 
 Alrighty! Working nicely. [Next post]({{ site.baseurl }}{% post_url 2018-03-21-battle-city-unity-18 %}), we will create the Score Scene.
-
-
-
+{% include serieswithintro.html %}

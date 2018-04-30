@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Recreate Battle City in Unity Part 13 : The Gamemaker - Spawning"
-excerpt: Recreate Battle City in Unity Part 13
+title: "Battle City in Unity Part 13 : The Gamemaker - Spawning"
+excerpt: Battle City in Unity Part 13
 summary: This post is part 13 to the series of post detailing how I recreate Battle City in Unity
 categories: [Tutorials]
 tags: [Unity, Unity 3D, Battle City, NES, retro, tilemap, tile, tanks, gaming, classic]
 comments: true
+series: "Recreate Battle City in Unity"
 ---
+{% include serieswithintro.html %}
 
 One of the critical roles of the GamePlayManager is to trigger the Spawning of enemies and Player(The actual spawning is done by the spawn point). Being the manager means it gets to choose where and when to spawn. To be able to decide where to spawn, it will need to know where are the spawn points. 
 
@@ -342,3 +344,4 @@ Update the Canvas's LevelManager component's Stage Number to 1. And press play. 
 <img src="{{ site.baseurl }}/images/BattleCity_TheGameMaker_Spawn_7.gif" alt="">
 
 That's all for Spawning part of GamePlayManager. Next we will move on to how do we clear the stage.
+{% include serieswithintro.html %}

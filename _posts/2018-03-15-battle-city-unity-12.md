@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "Recreate Battle City in Unity Part 11 : The Gamemaker - Starting the Stage and Game Over"
-excerpt: Recreate Battle City in Unity Part 11
+title: "Battle City in Unity Part 11 : The Gamemaker - Starting the Stage and Game Over"
+excerpt: Battle City in Unity Part 11
 summary: This post is part 11 to the series of post detailing how I recreate Battle City in Unity
 categories: [Tutorials]
 tags: [Unity, Unity 3D, Battle City, NES, retro, tilemap, tile, tanks, gaming, classic]
 comments: true
+series: "Recreate Battle City in Unity"
 ---
-
+{% include serieswithintro.html %}
 ### Introduction
 
 The Gamemaker controls the flow of the entire gameplay:
@@ -271,3 +272,4 @@ Drag and drop the GameOverText Object to the GamePlayManager Component's variabl
 <img src="{{ site.baseurl }}/images/BattleCity_GameOver_4.gif" alt="">
 
 That's it for the Start Stage and GameOver. [Next stop]({{ site.baseurl }}{% post_url 2018-03-16-battle-city-unity-13 %}), we are going to talk about the LevelManager, which allows us to do some settings on individual stages.
+{% include serieswithintro.html %}

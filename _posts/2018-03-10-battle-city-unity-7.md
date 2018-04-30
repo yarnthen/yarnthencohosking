@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "Recreate Battle City in Unity Part 6: Enemy AI"
-excerpt: Recreate Battle City in Unity Part 6
+title: "Battle City in Unity Part 6: Enemy AI"
+excerpt: Battle City in Unity Part 6
 summary: This post is part 6 to the series of post detailing how I recreate Battle City in Unity
 categories: [Tutorials]
 tags: [Unity, Unity 3D, Battle City, NES, retro, tilemap, tile, tanks, gaming, classic]
 comments: true
+series: "Recreate Battle City in Unity"
 ---
-
+{% include serieswithintro.html %}
 ### Skynet. Anyone?
 
 Sorry, we are not going to create a Skynet nor a Deep Blue nor something remotely capable of coming up with tactics to flank your tank trapping you in a corner where you cannot escape. These are beyond my meager knowledge; I apologize for my incapability. That could be something of a wishlist later if I manage to gain sufficient insight on that.
@@ -321,3 +322,5 @@ public void RandomDirection()
     }
 }
 {% endhighlight %}
+{% include serieswithintro.html %}
+

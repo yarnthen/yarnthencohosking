@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Recreate Battle City in Unity Part 3: Creation of the Protagonist and Antagonists(Tanks)"
-excerpt: Recreate Battle City in Unity Part 3
+title: "Battle City in Unity Part 3: Creation of the Protagonist and Antagonists(Tanks)"
+excerpt: Battle City in Unity Part 3
 summary: This post is part 3 to the series of post detailing how I recreate Battle City in Unity
 categories: [Tutorials]
 tags: [Unity, Unity 3D, Battle City, NES, retro, tilemap, tile, tanks, gaming, classic]
 comments: true
+series: "Recreate Battle City in Unity"
 ---
+{% include serieswithintro.html %}
 
 Now we are in the most popular section(but not necessary most important) of any game development, the character creation. Probably due to the abundance of character sprites which looks very attractive, people seem to spend a lot of time on character creation and its animation. 
 
@@ -38,3 +40,5 @@ Regardless if you intend to create animation or not, it will be straightforward 
 <img src="{{ site.baseurl }}/images/BattleCity_TankMoving2.gif" alt="">
 
 That marks the end of creation of the tanks. In the [next post]({{ site.baseurl }}{% post_url 2018-03-08-battle-city-unity-5 %}) we will talk about how to move the tank.
+{% include serieswithintro.html %}
+

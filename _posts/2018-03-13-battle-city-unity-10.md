@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Recreate Battle City in Unity Part 9: Firing the shots"
-excerpt: Recreate Battle City in Unity Part 9
+title: "Battle City in Unity Part 9: Firing the shots"
+excerpt: Battle City in Unity Part 9
 summary: This post is part 9 to the series of post detailing how I recreate Battle City in Unity
 categories: [Tutorials]
 tags: [Unity, Unity 3D, Battle City, NES, retro, tilemap, tile, tanks, gaming, classic]
 comments: true
+series: "Recreate Battle City in Unity"
 ---
+{% include serieswithintro.html %}
 
 ### Who's calling the shots here
 
@@ -365,3 +367,4 @@ public class EnemyAI : Movement {
     }
 }
 {% endhighlight %}
+{% include serieswithintro.html %}

@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "Recreate Battle City in Unity - Prequel"
-excerpt: Recreate Battle City in Unity - Prequel
+title: "Battle City in Unity Prequel"
+excerpt: Battle City in Unity Prequel
 summary: This post is the preparation to the series of post detailing how I recreate Battle City in Unity
 categories: [Tutorials]
 tags: [Unity, Unity 3D, Battle City, NES, retro, tilemap, tile, tanks, gaming, classic]
 comments: true
+series: "Recreate Battle City in Unity"
 ---
-
+{% include serieswithintro.html %}
 
 ### Getting Started
 
@@ -31,5 +32,5 @@ As a summary, the bare minimum you will require the below sprites unless stated 
 6. Square Images for a grenade, helmet, star, spade, stopwatch and tank to create the bonus crates
 7. An image of an Eagle Coat of Arms(the Player's Base)
 
-
 I have created a [link](https://yarnthen.itch.io/battle-city-recreated-in-unity){:target="_blank"} to my final end product of the game. Try it out and let me know if there are any bugs so I can enhance on it. Head to the [next post]({{ site.baseurl }}{% post_url 2018-03-05-battle-city-unity-2 %}) for actual tutorial if you are ready.
+{% include serieswithintro.html %}

@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Recreate Battle City in Unity Part 2: Level Creation using Tilemaps"
-excerpt: Recreate Battle City in Unity Part 2
+title: "Battle City in Unity Part 2: Level Creation using Tilemaps"
+excerpt: Battle City in Unity Part 2
 summary: This post is part 2 to the series of post detailing how I recreate Battle City in Unity
 categories: [Tutorials]
 tags: [Unity, Unity 3D, Battle City, NES, retro, tilemap, tile, tanks, gaming, classic]
 comments: true
+series: "Recreate Battle City in Unity"
 ---
+{% include serieswithintro.html %}
 
 <div class="info">If you have not save your scene, now is a good time to do it.</div>
 
@@ -180,3 +182,6 @@ That should be all for the tilemap. The most important task now is not to save t
 #### Play the game! Not yet!
 
 Now you can play the game. Sorry, just kidding. There is nothing to play. We are still missing the protagonist(the good guy tank) and antagonists(the villain tanks). We will talk about it in the [next post]({{ site.baseurl }}{% post_url 2018-03-07-battle-city-unity-4 %}).
+
+{% include serieswithintro.html %}
+

@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Recreate Battle City in Unity Part 19 : Bonus Crates - Generation"
-excerpt: Recreate Battle City in Unity Part 19
+title: "Battle City in Unity Part 19 : Bonus Crates - Generation"
+excerpt: Battle City in Unity Part 19
 summary: This post is part 19 to the series of post detailing how I recreate Battle City in Unity
 categories: [Tutorials]
 tags: [Unity, Unity 3D, Battle City, NES, retro, tilemap, tile, tanks, gaming, classic]
 comments: true
+series: "Recreate Battle City in Unity"
 ---
+{% include serieswithintro.html %}
 
 We are now on one of the unique features of this game which is designed to help the players: Bonus crates. 
 
@@ -182,3 +184,4 @@ void Death()
 {% endhighlight %}
 
 That's all the code we need to generate the bonus crate. [Next post]({{ site.baseurl }}{% post_url 2018-03-24-battle-city-unity-21 %}) we will talk about creating the various types of bonus crates and coding its effects starting with the additional live bonus crate.
+{% include serieswithintro.html %}

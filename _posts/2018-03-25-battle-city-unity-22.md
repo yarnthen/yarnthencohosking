@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Recreate Battle City in Unity Part 21 : Bonus Crates - Tank Invincibility"
-excerpt: Recreate Battle City in Unity Part 21
+title: "Battle City in Unity Part 21 : Bonus Crates - Tank Invincibility"
+excerpt: Battle City in Unity Part 21
 summary: This post is part 21 to the series of post detailing how I recreate Battle City in Unity
 categories: [Tutorials]
 tags: [Unity, Unity 3D, Battle City, NES, retro, tilemap, tile, tanks, gaming, classic]
 comments: true
+series: "Recreate Battle City in Unity"
 ---
+{% include serieswithintro.html %}
 
 Continuing with the Bonus Crates. We will touch on the Invincibility bonus crate which is symbolized by the helmet symbol. Its effects is to grant the PlayerTank a prolonged period of invincibility. 
 
@@ -74,3 +76,4 @@ Then press play!
 <img src="{{ site.baseurl }}/images/BattleCity_BonusHelmet_8.gif" alt="">
 
 Testing successfully! [Next stop]({{ site.baseurl }}{% post_url 2018-03-26-battle-city-unity-23 %}), will be on the Grenade Bonus Crates.
+{% include serieswithintro.html %}

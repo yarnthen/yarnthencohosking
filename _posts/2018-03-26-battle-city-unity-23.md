@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Recreate Battle City in Unity Part 22 : Bonus Crates - Grenade"
-excerpt: Recreate Battle City in Unity Part 22
+title: "Battle City in Unity Part 22 : Bonus Crates - Grenade"
+excerpt: Battle City in Unity Part 22
 summary: This post is part 22 to the series of post detailing how I recreate Battle City in Unity
 categories: [Tutorials]
 tags: [Unity, Unity 3D, Battle City, NES, retro, tilemap, tile, tanks, gaming, classic]
 comments: true
+series: "Recreate Battle City in Unity"
 ---
+{% include serieswithintro.html %}
 Next up on the Bonus Crates. We will touch on the Grenade bonus crate which is symbolized by the grenade symbol. Its effect is to destroy all enemy tanks in the gameplay area instantly, but the enemy tank reserve will not be affected.
 
 Start by dragging and dropping the Sprite you have for grenade bonus crate into the hierarchy which Unity will help to create the Game Object for you. Call the Game Object <keyword>Grenade</keyword>.Add a <keyword>Box Collider 2D</keyword> and assure its boundary fills the entire crate's image, then make it a trigger. Also, assign <keyword>Powerups</keyword> layer to the Game Object. You should also set its <keyword>Order In Layer to 2</keyword> to ensure it gets rendered on top 
@@ -159,3 +161,4 @@ Now we can test. I will delibrately destroy just 1 tank while leaving the rest t
 <img src="{{ site.baseurl }}/images/BattleCity_Grenade_4.gif" alt="">
 
 Working as expected. You can prefab the Grenade now. Let's move to the harder Bonus Crate effects starting with [Stopwatch]({{ site.baseurl }}{% post_url 2018-03-27-battle-city-unity-24 %}).
+{% include serieswithintro.html %}

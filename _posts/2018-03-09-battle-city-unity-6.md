@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "Recreate Battle City in Unity Part 5: Player Controller"
-excerpt: Recreate Battle City in Unity Part 5
+title: "Battle City in Unity Part 5: Player Controller"
+excerpt: Battle City in Unity Part 5
 summary: This post is part 5 to the series of post detailing how I recreate Battle City in Unity
 categories: [Tutorials]
 tags: [Unity, Unity 3D, Battle City, NES, retro, tilemap, tile, tanks, gaming, classic]
 comments: true
+series: "Recreate Battle City in Unity"
 ---
-
+{% include serieswithintro.html %}
 ### Heir to the Movement Script
 
 I mentioned in the previous post the Movement Script is an abstract class which needs to be inherited from to be complete. There are two scripts which will inherit from the Movement Script; one will be AI script which the computer uses to decide when and where to move, the second will be the Player Controller script which we will talk about in this post.
@@ -104,3 +105,5 @@ public class Player : Movement {
     }
 }
 {% endhighlight %}
+{% include series.html %}
+{% include serieswithintro.html %}

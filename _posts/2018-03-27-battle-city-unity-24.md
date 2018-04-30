@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Recreate Battle City in Unity Part 23 : Bonus Crates - Stopwatch"
-excerpt: Recreate Battle City in Unity Part 23
+title: "Battle City in Unity Part 23 : Bonus Crates - Stopwatch"
+excerpt: Battle City in Unity Part 23
 summary: This post is part 23 to the series of post detailing how I recreate Battle City in Unity
 categories: [Tutorials]
 tags: [Unity, Unity 3D, Battle City, NES, retro, tilemap, tile, tanks, gaming, classic]
 comments: true
+series: "Recreate Battle City in Unity"
 ---
+{% include serieswithintro.html %}
 
 The stopwatch is the hardest for me to figure out of the bonus crates effects. The additional things we need to add on is not a lot, but somehow all the ways I tried did not seem to work. Probably someone can later comment on how it can be done better as my way does not appear as straightforward. The effects of the stopwatch are to freeze all the enemy tanks for a period.
 
@@ -137,10 +139,4 @@ Now let's test it!
 <img src="{{ site.baseurl }}/images/BattleCity_Stopwatch_2.gif" alt="">
 
 Mission accomplished. [Next up]({{ site.baseurl }}{% post_url 2018-03-28-battle-city-unity-25 %}) is the Level up Bonus Crate.
-
-
-
-
-
-
-
+{% include serieswithintro.html %}

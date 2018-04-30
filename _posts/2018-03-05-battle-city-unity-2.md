@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "Recreate Battle City in Unity Part l: Single(ton) Sole Survivor"
-excerpt: Recreate Battle City in Unity Part l
+title: "Battle City in Unity Part l: Single(ton) Sole Survivor"
+excerpt: Battle City in Unity Part l
 summary: This post is part1 to the series of post detailing how I recreate Battle City in Unity
 categories: [Tutorials]
 tags: [Unity, Unity 3D, Battle City, NES, retro, tilemap, tile, tanks, gaming, classic]
 comments: true
+series: "Recreate Battle City in Unity"
 ---
-
+{% include serieswithintro.html %}
 ### Single(ton) Sole Survivor
 
 The first thing we need to create is a GameObject which will hold information throughout the entire game play.
@@ -106,3 +107,5 @@ public class MasterTracker : MonoBehaviour {
 }
 
 {% endhighlight %}
+
+{% include serieswithintro.html %}

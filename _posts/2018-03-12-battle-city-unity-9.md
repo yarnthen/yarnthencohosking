@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Recreate Battle City in Unity Part 8: Hurting the tanks"
-excerpt: Recreate Battle City in Unity Part 8
+title: "Battle City in Unity Part 8: Hurting the tanks"
+excerpt: Battle City in Unity Part 8
 summary: This post is part 8 to the series of post detailing how I recreate Battle City in Unity
 categories: [Tutorials]
 tags: [Unity, Unity 3D, Battle City, NES, retro, tilemap, tile, tanks, gaming, classic]
 comments: true
+series: "Recreate Battle City in Unity"
 ---
+{% include serieswithintro.html %}
 
 ### The real deal starts here
 
@@ -223,3 +225,4 @@ public class Projectile : MonoBehaviour {
     }
 }
 {% endhighlight %}
+{% include serieswithintro.html %}

@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Recreate Battle City in Unity Part 10: The Spawn"
-excerpt: Recreate Battle City in Unity Part 10
+title: "Battle City in Unity Part 10: The Spawn"
+excerpt: Battle City in Unity Part 10
 summary: This post is part 10 to the series of post detailing how I recreate Battle City in Unity
 categories: [Tutorials]
 tags: [Unity, Unity 3D, Battle City, NES, retro, tilemap, tile, tanks, gaming, classic]
 comments: true
+series: "Recreate Battle City in Unity"
 ---
+{% include serieswithintro.html %}
 
 ### How does a spawn look like?
 
@@ -152,5 +154,4 @@ Now let's test the trigger for spawning.
 <img src="{{ site.baseurl }}/images/BattleCity_TheSpawn_20.gif" alt="">
 
 Perfect! So that is how we can do spawning. <keyword>Prefab both the SpawnPoint and PlayerSpawnPoint</keyword>. All that's left is for something to trigger the spawning. And that will be handled by the [GameManager]({{ site.baseurl }}{% post_url 2018-03-15-battle-city-unity-12 %}).
-
-
+{% include serieswithintro.html %}

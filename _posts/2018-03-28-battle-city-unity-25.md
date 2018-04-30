@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Recreate Battle City in Unity Part 24 : Bonus Crates - Level Up"
-excerpt: Recreate Battle City in Unity Part 24
+title: "Battle City in Unity Part 24 : Bonus Crates - Level Up"
+excerpt: Battle City in Unity Part 24
 summary: This post is part 24 to the series of post detailing how I recreate Battle City in Unity
 categories: [Tutorials]
 tags: [Unity, Unity 3D, Battle City, NES, retro, tilemap, tile, tanks, gaming, classic]
 comments: true
+series: "Recreate Battle City in Unity"
 ---
+{% include serieswithintro.html %}
 
 This one is probably the hardest of the bonus crates to create as it has multi-tier changes.
 Let's look at what we should expect with the upgrades
@@ -280,3 +282,4 @@ Now 1 last test to see if the level gets carried over to the next stage. We will
 <img src="{{ site.baseurl }}/images/BattleCity_LevelUp_3.gif" alt="">
 
 All cleared! Let's move to the [last bonus crate- Spade]({{ site.baseurl }}{% post_url 2018-03-29-battle-city-unity-26 %}).
+{% include serieswithintro.html %}

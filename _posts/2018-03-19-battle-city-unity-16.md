@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Recreate Battle City in Unity Part 15 : Spawning Invincibility"
-excerpt: Recreate Battle City in Unity Part 15
+title: "Battle City in Unity Part 15 : Spawning Invincibility"
+excerpt: Battle City in Unity Part 15
 summary: This post is part 15 to the series of post detailing how I recreate Battle City in Unity
 categories: [Tutorials]
 tags: [Unity, Unity 3D, Battle City, NES, retro, tilemap, tile, tanks, gaming, classic]
 comments: true
+series: "Recreate Battle City in Unity"
 ---
+{% include serieswithintro.html %}
 
 This will be a short post as it is more about the animation than anything else. You will need an electricity aura sprite like the below for effects.
 
@@ -86,3 +88,5 @@ Right click on the TankCreating box and select <keyword>Make Transition</keyword
 ### No new code required
 
 That's all for the electricity aura effect animation. Remember to save your PlayerTank Prefab. [Next post]({{ site.baseurl }}{% post_url 2018-03-20-battle-city-unity-17 %}) we will talk about the explosion animation when a tank is destroyed.
+{% include serieswithintro.html %}
+s

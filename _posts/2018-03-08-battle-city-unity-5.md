@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Recreate Battle City in Unity Part 4: Tank Movement"
-excerpt: Recreate Battle City in Unity Part 4
+title: "Battle City in Unity Part 4: Tank Movement"
+excerpt: Battle City in Unity Part 4
 summary: This post is part 4 to the series of post detailing how I recreate Battle City in Unity
 categories: [Tutorials]
 tags: [Unity, Unity 3D, Battle City, NES, retro, tilemap, tile, tanks, gaming, classic]
 comments: true
+series: "Recreate Battle City in Unity"
 ---
+{% include serieswithintro.html %}
 
 ### Prep Works
 
@@ -201,5 +203,5 @@ public abstract class Movement : MonoBehaviour
     }
 }
 {% endhighlight %}
-
+{% include serieswithintro.html %}
 
