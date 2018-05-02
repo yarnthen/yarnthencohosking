@@ -32,7 +32,7 @@
         {% if page.url == post.url %}
             <b>This Article</b>
         {% else %}
-            <a href="{{post.url}}">{{post.title}}</a>
+            <a href="{{ site.baseurl }}{{post.url}}">{{post.title}}</a>
         {% endif %}
         </li>
     {% endif %}
