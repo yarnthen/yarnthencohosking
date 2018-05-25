@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Custom shortcuts for common tasks in Unity"
+title: "Unity Asset Package: Lazy Shortcuts - Custom shortcuts for common tasks in Unity"
 excerpt: Custom shortcuts for common tasks in Unity
 summary: This post teaches how to create a script to do common tasks in Unity editor easily
 categories: [How To]
@@ -151,6 +151,8 @@ This one is a bit tricky as the methods to use are not exposed(set inspector mod
 <img src="{{ site.baseurl }}/images/unity_Custom_Shortcuts_6.gif" alt="">
 ### Outro
 One of the things I did not mention is on <keyword>Undo.RegisterCompleteObjectUndo</keyword>. This is to do a snapshot of the object before we make the change so that we can undo it later if we want. [thebeardphantom](https://gist.github.com/thebeardphantom/ea6362139ee195a8abce){:target="_blank"} uses <keyword>Undo.RecordObjects</keyword>. That did not record the snapshot of the prior of some of my tasks(e.g., revert prefab) so I used RegisterCompleteObjectUndo instead. Below is the full code. One last thing i added is the <keyword>#if (UNITY_EDITOR)</keyword> so that this script will not get picked up when you build your game. Not sure why, without the #if statement, it will crash the build.
+
+# Update: I have made these shortcuts into a unity asset store package called [Lazy Shortcuts](https://assetstore.unity.com/packages/tools/utilities/lazy-shortcuts-117790). It is available as a free download if you do not wish to create these shortcuts by yourself.
 {% highlight csharp%}
 #if (UNITY_EDITOR) 
 using UnityEngine;
