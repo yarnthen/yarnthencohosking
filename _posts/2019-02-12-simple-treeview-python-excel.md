@@ -4,7 +4,7 @@ title: "Create a treeview using excel and Python"
 excerpt: Using Python to create a simple treeview using information in excel
 summary: This post teaches how to Python to create a simple treeview using information in excel
 categories: [How To]
-tags: [Python, knowledge base, treeview , css, html, pandas]
+tags: [Python, knowledge base, treeview , css, html, pandas, excel, spreadsheet, csv]
 comments: true
 ---
 
