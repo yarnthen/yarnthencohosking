@@ -2,7 +2,7 @@
 layout: post
 title: "Create a treeview using excel and Python"
 excerpt: Using Python to create a simple treeview using information in excel
-summary: This post teaches how to Python to create a simple treeview using information in excel
+summary: This post teaches how to use Python to create a simple treeview using information in excel
 categories: [How To]
 tags: [Python, knowledge base, treeview , css, html, pandas, excel, spreadsheet, csv]
 comments: true
@@ -113,7 +113,7 @@ for msg in messageList:
 f.close()
 {% endhighlight %}
 ### Summary
-The full code is available below. You can also check out the output and source I created for reference [here]({{ site.baseurl }}/examples){:target="_blank"}.
+The full code is available below. You can also check out the output and source I created for reference [here]({{ site.baseurl }}/examples/example.html){:target="_blank"}.
 {% highlight python%}
 import pandas
 df1=pandas.read_excel('selfhelp.xlsm').fillna("@Null$tring").sort_values(by=['Header 1', 'Header 2'])
