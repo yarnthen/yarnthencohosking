@@ -220,6 +220,6 @@ public class Demo : EditorWindow
 {% endhighlight %}
 
 ### Summary TL:DR?
-This whole thing is too long? No worries, I have created this as an Asset Store package(Lazy 2D Level Creator). I will share a link once it is up and running. I have also included demos on it, sometimes practical is better than theroey so looking at it live is probably a better way to learn this.
+This whole thing is too long? No worries, I have created this as an Asset Store package([Lazy 2D Level Creator](https://assetstore.unity.com/packages/tools/utilities/lazy-2d-level-creator-141298){:target="_blank"}). I have also included demos on it, sometimes practical is better than theroey so looking at it live is probably a better way to learn this.
 
 <img src="{{ site.baseurl }}/images/2dlevelcreator05.gif" alt="">
